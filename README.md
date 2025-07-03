@@ -4,20 +4,42 @@
 
 ## Fonctionnalités
 
-- **Personnage emblématique** - Incarnez un stickman rouge dans un univers coloré
 - **Gameplay simple et intuitif** - Contrôles faciles à apprendre, difficiles à maîtriser
-- **Système de shop avancé** - Boutiques avec formes aux propriétés uniques
-- **Formes spéciales** - Trampolines, anti-gravité, boost de vitesse et plus
-- **Progression par plateformes** - Débloquez de nouvelles zones avec vos achats
 - **Système de classement** - Scoreboard en temps réel avec Firebase
-- **Application mobile native** - Disponible sur Android et iOS
-- **Interface web moderne** - Site web avec Next.js et Tailwind CSS
+- **Application mobile** - Disponible sur Android et iOS
 - **Multiples critères de score** - Classement par score, hauteur et temps
-- **Interface utilisateur élégante** - Design moderne avec composants UIsaut compte !**
+- **Interface utilisateur élégante** - Design moderne avec composants UI
+- **Nombreuses îles** - Grande map a escalader
+- **Shop dynamique** - Permet de nouvelles possibilitées a chaque nouvelle île atteinte
+
+## Fonctionnalités du site web
+
+- **Page d'accueil** - Présentation du jeu et téléchargements
+- **Carrousel d'images** - Captures d'écran du jeu
+- **Scoreboard interactif** - Classement des joueurs avec tri
+- **Panel d'administration** - Gestion des données (pour les administrateurs)
+- **Profils utilisateur** - Informations et statistiques des joueurs
+
+## Développement
+
+### Base de données Firebase
+
+Les données sont stockées dans Firebase Realtime Database avec la structure suivante :
+- Scores des joueurs (score, hauteur, temps)
+- Informations utilisateur (nom, UID)
+- Métadonnées du jeu
+
 ## Le Jeu
 
 ### Principe du jeu
 RedFred met en scène un **stickman rouge** dans un univers de plateforme vertical où l'objectif est de grimper le plus haut possible. Le joueur contrôle ce personnage emblématique à travers différents niveaux remplis de défis et d'opportunités.
+
+### Objectifs du jeu
+- Grimpez le plus haut possible
+- Collectez un maximum de points
+- Découvrez tous les shops et leurs formes uniques
+- Maîtrisez les différentes propriétés des formes spéciales
+- Battez vos records et ceux de vos amis
 
 ### Mécaniques de jeu
 - **Déplacements** : Bougez votre stickman de gauche à droite pour naviguer entre les plateformes
@@ -61,31 +83,20 @@ Au fur et à mesure de votre progression, vous découvrirez des boutiques spéci
    - Visitez le site web pour voir votre position
    - Défiez vos amis et battez les records de hauteurun jeu de plateforme mobile avec un système de classement compétitif. Grimpez le plus haut possible, battez vos records et défiez vos amis dans ce jeu addictif !
 
-## Fonctionnalités
-
-- **Gameplay simple et intuitif** - Contrôles faciles à apprendre, difficiles à maîtriser
-- **Système de classement** - Scoreboard en temps réel avec Firebase
-- **Application mobile** - Disponible sur Android et iOS
-- **Interface web moderne** - Site web avec Next.js et Tailwind CSS
-- **Multiples critères de score** - Classement par score, hauteur et temps
-- **Interface utilisateur élégante** - Design moderne avec composants UI
-
 ## Technologies utilisées
 
 ### Frontend Web
-- **Next.js 15** - Framework React pour la production
-- **React 19** - Bibliothèque JavaScript pour l'interface utilisateur
+- **Next.js** - Framework React pour la production
 - **TypeScript** - Typage statique pour JavaScript
 - **Tailwind CSS** - Framework CSS utilitaire
-- **Framer Motion** - Animations fluides
-- **Radix UI** - Composants UI accessibles
+- **ShadCN** - Librarie de component
 
 ### Backend & Database
 - **Firebase** - Base de données en temps réel et authentification
 - **Firebase Realtime Database** - Stockage des scores et données utilisateur
 
 ### Mobile
-- **Applications natives** - Fichiers APK (Android) et IPA (iOS) disponibles
+- **Unity** - Application de création de jeu
 
 ## Installation
 
@@ -170,23 +181,6 @@ Au fur et à mesure de votre progression, vous découvrirez des boutiques spéci
     Après avoir importé le SDK Firebase, le plugin “External Dependency Manager” (anciennement Play Services Resolver) est normalement inclus.
     Pour forcer la résolution des dépendances, allez dans Assets > External Dependency Manager > Android Resolver > Resolve.
 
-
-
-## Comment jouer
-
-1. **Téléchargez l'application mobile**
-   - Android : Téléchargez le fichier APK depuis le site web
-   - iOS : Téléchargez le fichier IPA depuis le site web
-
-2. **Jouez et grimpez**
-   - Utilisez les contrôles tactiles pour faire sauter votre personnage
-   - Grimpez le plus haut possible
-   - Collectez des points en cours de route
-
-3. **Consultez le classement**
-   - Visitez le site web pour voir votre position
-   - Défiez vos amis et battez les records
-
 ## Structure du projet
 
 ```
@@ -205,67 +199,6 @@ RedFred/
     │   └── lib/             # Utilitaires et configuration
     └── package.json
 ```
-
-## Fonctionnalités du site web
-
-- **Page d'accueil** - Présentation du jeu et téléchargements
-- **Carrousel d'images** - Captures d'écran du jeu
-- **Scoreboard interactif** - Classement des joueurs avec tri
-- **Panel d'administration** - Gestion des données (pour les administrateurs)
-- **Profils utilisateur** - Informations et statistiques des joueurs
-
-## Développement
-
-### Base de données Firebase
-
-Les données sont stockées dans Firebase Realtime Database avec la structure suivante :
-- Scores des joueurs (score, hauteur, temps)
-- Informations utilisateur (nom, UID)
-- Métadonnées du jeu
-
-## 📱 Applications mobiles
-
-### 🎮 Expérience de jeu mobile
-L'application mobile RedFred offre une expérience de jeu complète et immersive :
-
-#### 🚶 Personnage
-- **Stickman rouge** : Personnage principal iconique et facilement reconnaissable
-- **Animations fluides** : Déplacements et sauts naturels et réactifs
-- **Contrôles tactiles** : Interface optimisée pour les écrans tactiles
-
-#### 🎯 Mécaniques de jeu
-- **Déplacement horizontal** : Naviguez de gauche à droite sur les plateformes
-- **Saut dynamique** : Système de saut précis pour atteindre les plateformes
-- **Exploration verticale** : Grimpez toujours plus haut pour battre vos records
-
-#### 🛒 Système de boutique intégré
-- **Shops distribués** : Boutiques placées stratégiquement sur différentes plateformes
-- **Formes collectibles** : Large variété de formes géométriques à acheter
-- **Progression basée sur les achats** : Les formes débloquent l'accès à de nouvelles zones
-
-#### ⚡ Formes spéciales et leurs effets
-- **🦘 Trampoline** : Permet des sauts plus hauts et plus puissants
-- **🌀 Anti-gravité** : Élimine temporairement la gravité pour des déplacements libres
-- **⚡ Boost de vitesse** : Accélère les déplacements horizontaux
-- **🔓 Clés d'accès** : Formes qui débloquent des plateformes spécifiques
-- **🌟 Effets combinés** : Certaines formes offrent plusieurs propriétés
-
-#### 📊 Système de progression
-- **Collecte de points** : Gagnez des points en explorant et en atteignant de nouvelles hauteurs
-- **Économie interne** : Utilisez vos points pour acheter des formes dans les shops
-- **Déblocage séquentiel** : Accédez à de nouvelles zones grâce à vos achats stratégiques
-
-### 📥 Téléchargement
-Les fichiers de l'application mobile sont disponibles dans :
-- `public/assets/gameFile/redfred.apk` - Version Android
-- `public/assets/gameFile/redfred.ipa` - Version iOS
-
-### 🎯 Objectifs du jeu
-- Grimpez le plus haut possible
-- Collectez un maximum de points
-- Découvrez tous les shops et leurs formes uniques
-- Maîtrisez les différentes propriétés des formes spéciales
-- Battez vos records et ceux de vos amis
 
 ## Contribution
 
